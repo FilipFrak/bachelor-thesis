@@ -17,7 +17,7 @@ class EEGDataLoader:
         filepath = self.files[index]
         data = np.load(file=filepath)
 
-        yield data
+        return data
 
 if __name__ == '__main__':
     pass
