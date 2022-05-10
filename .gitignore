@@ -3,3 +3,5 @@ data/*
 .vscode
 .venv
 .DS_Store
+.ipynb_checkpoints
+.env

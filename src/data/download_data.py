@@ -1,7 +1,9 @@
 import gdown
-url1 = 'https://drive.google.com/drive/folders/1aKoxgjfKm9VvMwIOCd1PfezJlAotYtvH?usp=sharing'
-url2 = 'https://drive.google.com/drive/folders/10KCjmmboLrmPQg1foPoWQjcRqC46o2-n?usp=sharing'
-dest = r'./bachelor-thesis/data/raw' 
+from decouple import config
 
-gdown.download_folder(url1, output=dest, quiet=True, use_cookies=True)
-gdown.download_folder(url2, output=dest, quiet=True, use_cookies=False)
+URL1 = config('URL1')
+URL2 = config('URL1')
+dest = r'../../data/raw' 
+
+gdown.download_folder(URL1, output=dest, quiet=True, use_cookies=True)
+gdown.download_folder(URL2, output=dest, quiet=True, use_cookies=False)
